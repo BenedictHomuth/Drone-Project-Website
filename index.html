@@ -15,7 +15,7 @@
             background-color: rgb(50, 54, 57);
         }
     </style>
-    <title>Document</title>
+    <title>Drone-Project WS19</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -59,7 +59,19 @@
             <canvas id="myChart" height="400"></canvas>
         </div>
     </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <canvas id="flightHours" height ="400"></canvas>
+        </div>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <canvas id="assignmentCount" height ="400"></canvas>
+        </div>
+    </div>
 </div>
+
+
 
 <!--Carousel-->
 <div id ="caroussel-demo" class="container-fluid">
@@ -109,21 +121,21 @@
 
 <!--Cards-->
 <div id ="card-demo" class="card-columns" style="margin:5%; margin-top:25%" data-aos="fade-up" data-aos-duration="2500">   
-    <div class="card shadow">
+    <div class="card shadow border-0" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
         <img class="card-img-top" src="https://wallpaperplay.com/walls/full/3/d/c/79108.jpg" alt="chicago">
         <div class="card-body ">
             <h5 class="card-title">This is a headline</h5>
             <p class="card-body"> this is text. Text is useful</p>
         </div>
     </div>
-    <div class="card shadow-sm ">
+    <div class="card shadow border-0" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
         <img class="card-img-top" src="https://wallpaperplay.com/walls/full/3/d/c/79108.jpg" alt="chicago">
         <div class="card-body">
             <h5 class="card-title">This is a headline</h5>
             <p class="card-body"> this is text. Text is useful</p>
         </div>
     </div>
-    <div class="card shadow-sm">
+    <div class="card shadow border-0" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
         <img class="card-img-top" src="https://wallpaperplay.com/walls/full/3/d/c/79108.jpg" alt="chicago">
         <div class="card-body">
             <h5 class="card-title">This is a headline</h5>
@@ -144,7 +156,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="charts.js"></script>
+    <script src="js_Charts/charts.js"></script>
+    <script src="js_Charts/flighthours.js"></script>
+    <script src="js_Charts/assignmentCount.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
             AOS.init();
