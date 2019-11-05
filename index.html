@@ -7,12 +7,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <!--Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin="">
+    </script>
+    <!--End Leaflet-->
     <style>
         html{
             scroll-behavior: smooth;
         }
         body{
             background-color: rgb(50, 54, 57);
+        }
+        #leafletMap {
+            width: 25%;
+            height: 400px;
+            position: relative;
+            margin-top:2%;
+            padding:0%; 
+            border: 1px solid black;
+            border-radius: 8px;
         }
     </style>
     <title>Drone-Project WS19</title>
@@ -119,6 +138,11 @@
     </div>
 </div>
 
+
+<div class="container-fluid">
+    <div id="leafletMap"></div>
+</div>
+
 <!--Cards-->
 <div id ="card-demo" class="card-columns" style="margin:5%; margin-top:25%" data-aos="fade-up" data-aos-duration="2500">   
     <div class="card shadow border-0" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
@@ -144,6 +168,7 @@
     </div>
 </div>
 
+
 <!--footer-->
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
@@ -160,6 +185,7 @@
     <script src="js_Charts/flighthours.js"></script>
     <script src="js_Charts/assignmentCount.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js_Leaflet/map.js"></script>
     <script>
             AOS.init();
     </script>
